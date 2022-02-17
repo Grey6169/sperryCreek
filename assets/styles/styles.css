@@ -1,72 +1,75 @@
 html, body {
-    height: 100vh;
-    width: 100vw;
     padding: 0;
     margin: 0;
 
     font-family: 'Raleway';
-}
-
-.background-image {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../media/leafbackground.jpg);
-    background-size: contain;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    height: 100vh;
-    width: 60vw;
-
-    position: absolute;
-    top: 0;
-    left: 20vw;
-
-    box-shadow: 5px 10px 50px #000000, -25px 0px 25px rgba(0, 0, 0, 0.25);
+    background: #000301;
 }
 
 .nav {
-    border: 1px solid #ccc;
     border-width: 1px 0;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .nav ul {
     padding: 0;
     margin: 0;
+    list-style-type: none;
+}
+
+.nav .title {
+    font-size: 1.25em;
+    font-weight: bold;
+    float: left;
 }
 
 .nav li {
-    display: inline;
+    float: right;
+    text-decoration: none;
 }
 
 .nav li a:hover {
-    background-color: #111;
+    background-color: white;
 }
 
 .nav a {
     display: inline-block;
     padding: 14px 16px;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
-h1 {
-    padding-top: 2.5%;
-    text-align: center;
-    font-size: 2.5em;
+.bgImage {
+    height: 100vh;
+    background-image: url("../media/D72_6566.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.container img {
-    width: 80%;
-    margin-left: 10%;
-    position: absolute;
-    bottom: 15px;
+.about {
+    color: white;
+    font-size: 1.15em;
+    padding: 5%;
+    line-height: 150%;
+}
+
+.about a {
+    color: white;
+}
+
+.about .title {
+    font-size: 2em;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Pacifico';
+    font-weight: lighter;
 }
