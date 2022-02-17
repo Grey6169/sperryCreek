@@ -12,7 +12,7 @@ html, body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #000301;
     position: absolute;
     top: 0;
     width: 100%;
@@ -24,41 +24,45 @@ html, body {
     list-style-type: none;
 }
 
-.nav .title {
-    font-size: 1.25em;
-    font-weight: bold;
-    float: left;
-}
-
 .nav li {
-    float: right;
-    text-decoration: none;
+    display: inline;
 }
 
 .nav li a:hover {
-    background-color: white;
+    background-color: gray;
 }
 
 .nav a {
     display: inline-block;
     padding: 14px 16px;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .bgImage {
     height: 100vh;
-    background-image: url("../media/D72_6566.jpg");
+    background-image: url("../media/mainphoto.jpg");
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    background-attachment: fixed;
+}
+
+.bgImage .title {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 5em;
+    font-family: 'Pacifico';
+    color: white;
 }
 
 .about {
     color: white;
     font-size: 1.15em;
-    padding: 5%;
     line-height: 150%;
 }
 
@@ -69,7 +73,30 @@ html, body {
 .about .title {
     font-size: 2em;
     text-align: center;
-    padding: 1%;
+    padding: 3%;
     font-family: 'Pacifico';
     font-weight: lighter;
+}
+
+.about .info {
+    text-indent: 50px;
+}
+
+.footer {
+    background-color: #000301;
+    border-top: 1px solid white;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    padding: 5%;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 3%;
+    min-height: 25vh;
 }
