@@ -179,8 +179,28 @@ html, body {
 
     .row {
         display: block;
+        padding: 2.5%;
+    }
+
+    .about .title {
+        font-size: 1.25em;
+        text-align: center;
+        padding: 3%;
+        font-family: 'Pacifico';
+        font-weight: lighter;
+    }
+    
+    .about .info, a {
+        text-indent: 50px;
+        font-size: 0.75em;
+    }
+
+    .topnav a:hover {
+        background-color: #000301;
     }
 }
+
+
 
 /* 
     Media Queries - 0 - 600, 600 - 768, 768 - 992, 992 +
