@@ -100,3 +100,96 @@ html, body {
     padding: 3%;
     min-height: 25vh;
 }
+
+.logo {
+    max-width: 50px;
+}
+
+.topnav {
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #000301;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: darkgray;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.title2 {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a{display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .bgImage {
+        display: none;
+    }
+
+    .title2 {
+        display: block;
+        margin-top: 50px;
+        font-family: 'Pacifico';
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .title2 .mainphoto {
+        width: 100%;
+    }
+
+    .row {
+        display: block;
+    }
+}
+
+/* 
+    Media Queries - 0 - 600, 600 - 768, 768 - 992, 992 +
+
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 5em;
+    font-family: 'Pacifico';
+    color: white;
+*/

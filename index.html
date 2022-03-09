@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="nav">
+    <!-- 
+    <div class="nav" id="topnav">
         <ul>
             <li><a href="index.html">Home</a> </li>
             <li><a href="members.html">Band Members</a> </li>
@@ -21,13 +23,36 @@
             <li><a href="music.html">Music</a> </li>
             <li><a href="gallery.html">Gallery</a> </li>
             <li><a href="contact.html">Contact</a> </li>
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                    <img src="./assets/media/hamburger.png" class="icon" alt="Hamburger menu">
+                </a>
+            </li>
         </ul>
-    </div>
+    </div>  -->
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="members.html">Band Members</a>
+        <a href="performances.html">Performances</a> 
+        <a href="music.html">Music</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
     <div class="bgImage">
         <div class="title">
             Sperry Creek Bluegrass Band
         </div>
+    </div>
+
+    <div class="title2">
+        Sperry Creek Bluegrass Band
+
+        <img class="mainphoto" src="./assets/media/mainphoto.jpg">
     </div>
 
     <div class="row">
@@ -40,18 +65,18 @@
                     height of the pandemic keeping each other sane through socially distant backyard jam
                     sessions. It didn’t take the group long to realize that good sounds were happening. They
                     soon adopted the name of a nearby creek, and the band was officially formed in the
-                    summer of 2020. <br/>
+                    summer of 2020. <br/> <br/>
                 </div>
                 <div class="info">
                     Sperry Creek is made up of longtime musicians Scott Freemantle (bass); Marilyn
                     Toback-Reveley (guitar); Bill Reveley (fiddle); Corrie Folsom-O’Keefe (mandolin) and
                     Dan O’Keefe (banjo), who all share a passion for bluegrass music. A culmination of
                     musicians from other well known CT bands, Sperry Creek has allowed them to share their
-                    love of music with others throughout the New England bluegrass scene. <br/>
+                    love of music with others throughout the New England bluegrass scene. <br/> <br/>
                 </div>
                 
                 <a href="www.reverbnation.com/sperrycreek"> Listen to their music </a> <br/>
-                <a href="https://www.facebook.com/Sperry-Creek-117272120141713"> Follow their Facebook</a>
+                <a href="https://www.facebook.com/Sperry-Creek-117272120141713"> <img class="logo" src="./assets/media/facebookLogo.png"></a>
             </div>
         </div>
         <div class="column">
@@ -66,8 +91,19 @@
     
 
     <div class="footer">
-        C 2022 Sperry Creek
+        © 2022 Sperry Creek
     </div>
 
+
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
 </body>
 </html>
